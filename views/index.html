@@ -22,7 +22,13 @@
     <br>
     <div class="container">
 
-        <button  class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addPlatoModal" onclick="agregarboton()" >Agregar
+        <form action="buscar"></form>
+        <input type="text" id="Buscar">
+
+        <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+        </form>
+        <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addPlatoModal"
+            onclick="agregarboton()">Agregar
             Plato</button>
 
         <!-- Modal -->
@@ -82,7 +88,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" id="botonAgregar" class="btn btn-primary" >Agregar Producto</button>
+                        <button type="submit" id="botonAgregar" class="btn btn-primary">Agregar Producto</button>
                         </form>
 
                     </div>
@@ -134,25 +140,27 @@
 
 
     <!-- Modal de Confirmación de Eliminación -->
-<div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="confirmDeleteModalLabel">Confirmar Eliminación</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="confirmDeleteModalBody">
-              
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-danger" id="confirmDeleteBtn" onclick="deleteDish()">Eliminar</button>
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog"
+        aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmDeleteModalLabel">Confirmar Eliminación</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="confirmDeleteModalBody">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn"
+                        onclick="deleteDish()">Eliminar</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 

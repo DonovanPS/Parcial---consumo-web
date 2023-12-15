@@ -121,7 +121,6 @@ function agregarboton(){
     const boton = document.createElement('botonAgregar');
     boton.textContent = 'Agregar';
 
-
 }
 
 function confirmDelete(Dish) {
